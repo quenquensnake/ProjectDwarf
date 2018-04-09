@@ -43,4 +43,9 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = AI)
 		class UAISenseConfig_Sight* SightConfig;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = AI)
+		bool bIsPlayerDetected;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = AI)
+		float DistanceToPlayer = 0.0f;
 };

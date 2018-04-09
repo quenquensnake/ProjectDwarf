@@ -3,6 +3,7 @@
 #include "AI_Bot_Controller.h"
 #include "AI_Bot_Character.h"
 #include "Waypoint.h"
+#include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
 #include "Perception/AIPerceptionComponent.h"
 #include "Perception/AISenseConfig_Sight.h"
 
@@ -50,8 +51,13 @@ void AAI_Bot_Controller::Tick(float DeltaSeconds) {
 	Super::Tick(DeltaSeconds);
 
 	AAI_Bot_Character* Character = Cast<AAI_Bot_Character>(GetPawn());
+
+	//Move to Waypoint
 	if(Character->NextWaypoint != nullptr){
 		MoveToActor(Character->NextWaypoint, 5.0f);
+	}
+	else if(bIsPlayerDetected == true){
+		
 	}
 }
 
@@ -66,4 +72,8 @@ FRotator AAI_Bot_Controller::GetControlRotation() const {
 
 void AAI_Bot_Controller::OnPawnDetected(TArray<AActor*> DetectedPawns) {
 
+	//for(size_t i = 0; i < DetectedPawns.Num(); i++){
+	//	DistanceToPlayer = GetPawn()->GetDistanceTo(DetectedPawns[i]);
+	//	UE_LOG(LogTemp, Warning, TEXT("Distance: %f"), DistanceToPlayer);
+	//}
 }
