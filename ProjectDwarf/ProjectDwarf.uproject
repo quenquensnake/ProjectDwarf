@@ -17,8 +17,13 @@
 	"Plugins": [
 		{
 			"Name": "DonAINavigation",
-			"Enabled": false,
+			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/81b4bd085c8c41508edfeb160b6ddf62"
+		},
+		{
+			"Name": "SixDOFMovement",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/f0817678d9c5456da50ff829551a21e9"
 		}
 	]
 }
