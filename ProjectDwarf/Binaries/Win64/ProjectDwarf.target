@@ -50,6 +50,16 @@
 			"IsPrecompiled" : true
 		},
 		{
+			"Path" : "$(EngineDir)/Plugins/Marketplace/DonAINavigation/Binaries/Win64/UE4-DonAINavigation.lib",
+			"Type" : "StaticLibrary",
+			"IsPrecompiled" : true
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Marketplace/SixDOFMovement/Binaries/Win64/UE4-SixDOFMovement.lib",
+			"Type" : "StaticLibrary",
+			"IsPrecompiled" : true
+		},
+		{
 			"Path" : "$(EngineDir)/Plugins/Media/AndroidMedia/Binaries/Win64/UE4-AndroidMediaFactory.lib",
 			"Type" : "StaticLibrary",
 			"IsPrecompiled" : true
@@ -724,6 +734,14 @@
 		},
 		{
 			"Path" : "$(EngineDir)/Plugins/Experimental/HTML5Networking/HTML5Networking.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Marketplace/DonAINavigation/DonAINavigation.uplugin",
+			"Type" : "UFS"
+		},
+		{
+			"Path" : "$(EngineDir)/Plugins/Marketplace/SixDOFMovement/SixDOFMovement.uplugin",
 			"Type" : "UFS"
 		},
 		{
